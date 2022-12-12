@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Afirmenet Personas</title>
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" href="resources/css/style.css" media="all" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" media="all" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" media="all" />
+
+</head>
+<body>
+
+<section class="bodyColor">
+<!---- top menu ---->
+<div class="loginTopMenu">
+    <div class="loginTopLogo">
+        <img src="resources/image/logotipo.png" alt="">
+    </div>
+    <div class="loginTopRightClose">
+        <a href="afirme.html">
+            <img src="resources/image/icnMenuClose.svg" alt="">
+        </a>
+    </div>
+    
+</div>
+<!---- /top menu ---->
+
+<!----- form ------>
+<div class="loginFormMain">
+    <div class="loginForm">
+        <h2>Datos de Acceso</h2>
+
+        <form action="">
+            <div class="loginFormDiv">
+                <label for="">Contrato Banca Electronica</label>
+                    <input type="text" value="......7001" readonly>
+            </div>
+
+            <div class="loginFormDiv">
+                <label for="">Usario</label>
+                <div class="bigTextBoxDiv bigTextBoxDiv2">
+                    <input type="text" placeholder="Oscar" class="inputBox">
+
+                    <a href="javascript:void(0)" class="questionLoginFrom" onmouseover="showMsg()" onmouseout="hideMsg()">?</a>
+
+                    <div class="messageBox">
+                        <p>Es la clave alfanumérica de 8 a 10 dígitos creada para ingresar a Afirmenet.</p>
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="loginFormDiv">
+                <label for="">Alias Registrado</label>
+                <div class="bigTextBoxDiv">
+                    <input type="text" value="@Oscar" class="bigTextBox" readonly>
+                    <img src="resources/image/avatar17.jpg" class="avatarImage" alt="">
+                </div>
+            </div>
+
+            <div class="loginFormDiv">
+                <label for="">Contraseña</label>
+                <div class="bigTextBoxDiv bigTextBoxDiv2">
+                    <input type="text" placeholder="Contraseña" class="inputBox">
+
+                    <a href="javascript:void(0)" class="questionLoginFrom" onmouseover="showMsg2()" onmouseout="hideMsg2()">?</a>
+
+                    <div class="messageBox2">
+                        <p>Es la clave alfanumérica de 8 a 10 dígitos creada para ingresar a Afirmenet.</p>
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="loginFormDiv">
+                <label for="">Clav Dinamica</label>
+                <div class="bigTextBoxDiv bigTextBoxDiv2">
+                    <input type="text" placeholder="Solo numeros" class="inputBox">
+
+                    <a href="javascript:void(0)" class="questionLoginFrom" onmouseover="showMsg3()" onmouseout="hideMsg3()">?</a>
+
+                    <div class="messageBox3">
+                        <p>Es la clave alfanumérica de 8 a 10 dígitos creada para ingresar a Afirmenet.</p>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="loginFormDiv2">
+                <a href="javascript:void(0)">sincronización de token</a>
+            </div>
+            <div class="text-center">
+                <button class="submitBtn">INGRESAR</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!----- /form ------>
+
+<!----  footer ------>
+
+    <div class="loginFooter">
+        <div class="container">
+            <div class="text-right footerTop">
+                <h6>Atención telefónica</h6>
+                <h1>81 8318 3990</h1>
+            </div>
+       </div>
+
+       <div class="container-fluid">
+        <div class="footerBottom">
+            <div class="footerBottomLeft">
+                <h6>Derechos Reservados Afirme Grupo Financiero 2022.</h6>
+                <a href="#">Aviso de Privacidad</a> | <a href="#">Términos Legales</a> 
+            </div>
+            <div class="footerBottomRight">
+                <span>Sellos de Seguridad</span>
+                <img src="resources/image/verisign.jpg" alt="">
+            </div>
+        </div>
+      </div>
+
+</div>
+
+
+<!----  /footer ------>
+
+</section>
+
+<script>
+    function showMsg()
+    {
+        jQuery(".messageBox").show();
+    }
+    function hideMsg()
+    {
+        jQuery(".messageBox").hide();
+    }
+    function showMsg2()
+    {
+        jQuery(".messageBox2").show();
+    }
+    function hideMsg2()
+    {
+        jQuery(".messageBox2").hide();
+    }
+    function showMsg3()
+    {
+        jQuery(".messageBox3").show();
+    }
+    function hideMsg3()
+    {
+        jQuery(".messageBox3").hide();
+    }
+
+</script>
+
+<script type="text/javascript" src="resources/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

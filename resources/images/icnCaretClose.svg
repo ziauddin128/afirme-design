@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="6px" viewBox="0 0 11 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Letter</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="export" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Letter" transform="translate(-219.000000, -41.000000)" fill-rule="nonzero" fill="#009639">
+            <path d="M221.820019,42.1502445 C221.589745,41.9496327 221.216773,41.9499608 220.986962,42.1509771 C220.757152,42.3519935 220.757527,42.6775774 220.987801,42.8781891 L224.398741,45.8497554 C224.62585,46.0476096 224.992582,46.050405 225.223614,45.856043 L228.634553,42.9864963 C228.868805,42.7894254 228.875694,42.4638969 228.64994,42.259408 C228.424185,42.0549191 228.051277,42.0489057 227.817025,42.2459765 L224.822054,44.7655784 L221.820019,42.1502445 Z" id="Path-2" transform="translate(224.814850, 44.000000) scale(1, -1) translate(-224.814850, -44.000000) "></path>
+        </g>
+    </g>
+</svg>

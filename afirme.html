@@ -1,0 +1,2408 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <title>Afirme, el banco de hoy</title>
+      <link rel="stylesheet" href="resources/css/bootstrap.min.css" media="all" />
+      <link rel="stylesheet" href="resources/css/style.css" media="all" />
+
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" media="all" />
+
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" media="all" />
+
+      <link rel="stylesheet" href="resources/css/carousel.css" media="all" />
+   </head>
+   <body>
+
+     <!---- go to top ----->
+      <button onclick="topFunction()" id="myBtn" title='Subir'></button>
+     <!---- /go to top ----->
+
+      <!---- header ----->
+      <header>
+         <header>
+            <div class="menuAfirme">
+            <nav class="navbar navbar-default navbar-static-top">
+               <div class="container2">
+               <div class="navbar-header">
+                  <a class="navbar-brand" href="/" data-security-popup="hide" alt="">
+                  <img src="resources/image/logoAfirme.png" alt=""/>
+                  </a>
+                  <div class="floatR">
+                     <div class="contUserTools showMobile ingresa">
+                        <li class="dropdown1">
+                           <a href="#" id="btnMobile" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                           <img src="resources/image/navUser.svg" class="img1" alt="" />
+                           <img src="resources/image/navChatG.svg" class="img2" alt=""/>
+                           <span class="flechaLogin">
+                           </span>
+                           </a>
+                        </li>
+                     </div>
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                     </button>
+                  </div>
+               </div>
+              
+               <div id="ingresar" class="contIngresoRadio">
+                  <div class="nombreAyudaIngreso" data-toggle="modal" data-target="#idayuda">
+                     <div class="cuadroAyuda">
+                        <button type="button" class="tooltipHelp" data-toggle="tooltip" data-placement="top" title="Ayuda sobre Afirmenet">
+                        <img src="resources/image/Help.svg" alt="" />
+                        </button>
+                        <p>AfirmeNet</p>
+                     </div>
+                  </div>
+                  <form action="" method="post">
+                     <div class="ingresoDatosM">
+                        <div class="radioUsuarioEmpresasM">
+                           <div class="opcionClienteM">
+                              <input id="personasMobileId" type="radio" name="cliente" value="Usuario" >
+                              <label for="personasMobileId">
+                                 <span></span>
+                                 <p>Personas</p>
+                              </label>
+                           </div>
+                           <div class="opcionClienteM">
+                              <input id="empresasMobileId" type="radio" name="cliente" value="Empresa" >
+                              <label for="empresasMobileId">
+                                 <span></span>
+                                 <p>Empresas</p>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="credentialsM">
+                           <div class="ingresoNumeroM">
+                              <input id="numContratoMobile" type="text" style="text-transform: uppercase" name="UserId" placeholder="Usuario"  value="">
+                           </div>
+                           <div class="btnLoginRadioM">
+                              <input type="submit" value="Ingresar">
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <div id="navbar" class="navbar-collapse collapse">
+               <div class="row">
+                  <div class="contUserTools showMobile">
+                     <div class="col-xs-4 col-sm-6 col-sm-4 col-sm-4 noPadding">
+                        <li class="contAyuda">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                              <img src="resources/image/navChatG.svg" class="img1-A" alt="" />
+                              <img src="resources/image/navChatG.svg" class="img2-A" alt="" />
+                              <span class="caretAfm flechaLogin-ayuda">
+                              </span>
+                              <p>Ayuda</p>
+                           </a>
+                        </li>
+                     </div>
+                     <div class="col-xs-4 col-sm-6 col-sm-4 col-sm-4 noPadding">
+                        <li>
+                           <a href="" data-security-popup="hide">
+                              <img src="resources/image/navLocation.svg" alt="" />
+                              <p>Visítanos</p>
+                           </a>
+                        </li>
+                     </div>
+                     <div class="col-xs-4 col-sm-6 col-sm-4 col-sm-4 noPadding">
+                        <li class="contBuscador">
+                           <a id="buscador" class="seach_btn_menu dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                              <img src="resources/image/navSearchG.svg" class="img1-B" alt="" />
+                              <img src="resources/image/navSearchG.svg" class="img2-B" alt="" />
+                              <p>Buscar</p>
+                           </a>
+                        </li>
+                     </div>
+                  </div>
+                  <div class="showAyuda">
+                     <ul class="backGrey">
+                        <li class="large">
+                           <div class="itemContacto">
+                              <div class="icnContacto">
+                                 <img src="resources/image/CallW.svg" alt="" />
+                              </div>
+                              <div class="infoCont">
+                                 <a class="telAf" href="tel:+8183183990">81 8318 3990</a>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="medium">
+                           <div class="itemContacto">
+                              <div class="icnContacto">
+                                 <img src="resources/image/EmailW.svg" alt="" />
+                              </div>
+                              <div class="infoCont">
+                                 <h4>Email</h4>
+                                 <a href="mailto:afirmeresponde@afirme.com" class="txtRegular">afirmeresponde@afirme.com</a>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="short">
+                           <div class="itemContacto">
+                              <div class="icnContacto">
+                                 <a href="#" style="padding-bottom: 0px; padding-top: 0px;">
+                                 <img src="resources/image/CallW.svg" alt="" />
+                                 </a>
+                              </div>
+                              <div class="chatStatus infoCont">
+                                 <h4>Chat
+                                    <span>&#9679;</span>
+                                 </h4>
+                                 <p class="txtRegular">En línea</p>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="large">
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="showBuscador">
+                     <ul class="backGrey">
+                        <li>
+                           <form action="#" data-security-popup="hide" class="navbar-form navbar-left" role="search" method="post">
+                              <div class="form-group">
+                                 <input type="text" name="queryStr" class="form-control" placeholder="Palabra Clave">
+                              </div>
+                              <button type="submit" class="btn btn-default">Buscar</button>
+                           </form>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <ul class="nav navbar-nav">
+                  <li class="dropdown hoverActive">
+                     <a href="#" data-security-popup="hide" class="showDesktop dropdown-toggle">
+                     Personas
+                     <span class="caretAfm">
+                     </span>
+                     </a>
+                     <a href="#" data-security-popup="hide" class="col-xs-6 col-sm-6 showMobile dropdown-toggle" title="Personas">
+                     Personas
+                     </a>
+                     <span class="showMobile caretAfm dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></span>
+                     <ul class="dropdown-menu dropdownIcons">
+                        <div class="container">
+                        <div class="row">
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Cheque.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Cuentas</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/CashBag.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Cuentas y Créditos de Nómina</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/CreditCard.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Tarjetas de Crédito</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/HouseMoney.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Crédito Hipotecario</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Car.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Crédito de Auto</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Person.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Crédito Personal</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Inverts.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Inversiones</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Invert.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Fondos de Inversión</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Money.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Mesa Financiera</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Secure.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Seguros</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/MobileMoney.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Banca en Línea</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/InmueblesAdjudicados-01.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Inmuebles Afirme</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Donation.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Remesas</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Divisas.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Divisas</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/corresponsales.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Corresponsales y Alianzas</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                        </div>
+                        <div>
+                     </ul>
+                  </li>
+                  <li class="dropdown hoverActive">
+                     <a href="#" data-security-popup="hide" class="showDesktop dropdown-toggle">
+                     Patrimonial
+                     <span class="caretAfm">
+                     </span>
+                     </a>
+                     <a href="#" data-security-popup="hide" class="col-xs-6 col-sm-6 showMobile dropdown-toggle" title="Patrimonial">
+                     Patrimonial
+                     </a>
+                     <span class="showMobile caretAfm dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></span>
+                     <ul class="dropdown-menu dropdownIcons">
+                        <div class="container">
+                        <div class="row">
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Products.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Productos</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Inverts.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Inversiones</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Invert.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Fondos de Inversión</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Divisas.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Divisas</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Bank.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Fideicomisos</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Secure.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Seguros</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/MobileMoney.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Banca en Línea</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                        </div>
+                        <div>
+                     </ul>
+                  </li>
+                  <li class="dropdown hoverActive">
+                     <a href="#" data-security-popup="hide" class="showDesktop dropdown-toggle">
+                     Pyme
+                     <span class="caretAfm">
+                     </span>
+                     </a>
+                     <a href="#" data-security-popup="hide" class="col-xs-6 col-sm-6 showMobile dropdown-toggle" title="Pyme">
+                     Pyme
+                     </a>
+                     <span class="showMobile caretAfm dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></span>
+                     <ul class="dropdown-menu dropdownIcons">
+                        <div class="container">
+                        <div class="row">
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Cheque.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Cuentas</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Check.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Paquetes </h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/CashBag.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Nómina</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Contract.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Créditos</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Key.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Arrendamiento</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/HandCoins.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Cobranza</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/adquirencia-nav.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Adquirencia</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Inverts.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Inversiones</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Invert.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Fondos de Inversión</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Divisas.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Divisas</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Secure.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Seguros</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/MobileMoney.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Banca en Línea</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                        </div>
+                        <div>
+                     </ul>
+                  </li>
+                  <li class="dropdown hoverActive">
+                     <a href="#" data-security-popup="hide" class="showDesktop dropdown-toggle">
+                     Empresas
+                     <span class="caretAfm">
+                     </span>
+                     </a>
+                     <a href="#" data-security-popup="hide" class="col-xs-6 col-sm-6 showMobile dropdown-toggle" title="Empresas">
+                     Empresas
+                     </a>
+                     <span class="showMobile caretAfm dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></span>
+                     <ul class="dropdown-menu dropdownIcons">
+                        <div class="container">
+                        <div class="row">
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Cheque.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Cuentas</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/CashBag.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Nómina</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Contract.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Financiamiento</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Key.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Arrendamiento</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/HandCoins.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Cash Management</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/adquirencia-nav.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Adquirencia</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Box.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Almacenadora</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Inverts.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Inversiones</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Invert.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Fondos de Inversión</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Bank.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Fideicomisos</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Secure.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Seguros</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/MobileMoney.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Banca en Línea</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Divisas.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Divisas</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                        </div>
+                        <div>
+                     </ul>
+                  </li>
+                  <li class="dropdown hoverActive">
+                     <a href="#" data-security-popup="hide" class="showDesktop dropdown-toggle">
+                     Gobierno
+                     <span class="caretAfm">
+                     </span>
+                     </a>
+                     <a href="#" data-security-popup="hide" class="col-xs-6 col-sm-6 showMobile dropdown-toggle" title="Gobierno">
+                     Gobierno
+                     </a>
+                     <span class="showMobile caretAfm dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></span>
+                     <ul class="dropdown-menu dropdownIcons">
+                        <div class="container">
+                        <div class="row">
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Cheque.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Cuentas de Cheques</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/CashBag.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Nómina</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Briefcase.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Programas de Microcréditos</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/CreditCard.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Medios de pago para Programas Sociales</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/GiveMoney.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Esquemas para Recaudación de Impuestos</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/PointMoney.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Financiamientos</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Inverts.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Inversiones y Fondos de Inversión</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/HouseMoney.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Infraestructura e Inversión</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Businessman.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Personal especializado</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                           <div class="col-xs-6 col-sm-4 col-sm-3 col-sm-2">
+                              <li>
+                                 <a href="#" data-security-popup="hide">
+                                    <div class="iconMenu">
+                                       <img src="resources/image/Secure.svg" alt="" />
+                                    </div>
+                                    <div class="ttlIconMenu">
+                                       <h3>Seguros</h3>
+                                    </div>
+                                 </a>
+                              </li>
+                           </div>
+                        </div>
+                        <div>
+                     </ul>
+                  </li>
+                  <li class="dropdown hoverActive">
+                  <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="hide" class="showDesktop dropdown-toggle">
+                  Digital Hub
+                  <span class="caretAfm">
+                  </span>
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="hide" class="col-xs-6 col-sm-6 showMobile dropdown-toggle" title="Digital Hub">
+                  Digital Hub
+                  </a>
+                  <span class="showMobile caretAfm dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></span>
+                  </li>
+                  <li class="dropdown hoverActive">
+                  </li>
+                  <div class="contUserTools showDesktop">
+                  <li onclick="closeLog()" class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <img src="resources/image/navChatG.svg" class="imgMenDesk1" alt="" />
+                  <img src="resources/image/navChatG.svg" class="imgMenDesk2" alt="" />
+                  <span class="caretAfm">
+                  </span>
+                  </a>
+                  <ul class="dropdown-menu backGrey">
+                  <li>
+                  <div class="itemContacto">
+                  <div class="icnContacto">
+                  <img src="resources/image/CallW.svg" alt="" />
+                  </div>
+                  <div class="infoCont">
+                  <a class="telAf" href="tel:+8183183990">81 8318 3990</a>
+                  </div>
+                  </div>
+                  </li>
+                  <li>
+                  <div class="itemContacto">
+                  <div class="icnContacto">
+                  <img src="resources/image/EmailW.svg" alt="" />
+                  </div>
+                  <div class="infoCont">
+                  <h4>E-mail</h4>
+                  <a href="mailto:afirmeresponde@afirme.com" class="txtRegular">afirmeresponde@afirme.com</a>
+                  </div>
+                  </div>
+                  </li>
+                  <li>
+                  <div class="itemContacto">
+                  <div class="icnContacto">
+                  <a href="#" style="padding-bottom: 0px; padding-top: 0px;">
+                  <img src="resources/image/ChatW.svg" alt="" />
+                  </a>
+                  </div>
+                  <div class="chatStatus infoCont">
+                  <h4>Chat
+                  <span>&#9679;</span>
+                  </h4>
+                  <p class="txtRegular">En Línea</p>
+                  </div>
+                  </div>
+                  </li>
+                  <li>
+                  <div class="itemContacto">
+                  <div class="icnContacto">
+                  <img src="resources/image/whatsapp-01.svg" alt="" />
+                  </div>
+                  <div class="infoCont">
+                  <a class="telAf" href="tel:+Whatsapp">Whatsapp</a>
+                  <a class="txtRegular" href="tel:++1209-340-0007">+1209-340-0007 </a>
+                  </div>
+                  </div>
+                  </li>
+                  </ul>
+                  </li>
+                  <li>
+                  <a href="#" data-security-popup="hide">
+                  <img src="resources/image/navLocation.svg" alt="" />
+                  </a>
+                  </li>
+                  <li class="dropdown">
+                  <a href="#" data-security-popup="hide" id="buscador" class="seach_btn_menu dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <img src="resources/image/navSearchG.svg" class="imgMenDesk1" alt="" />
+                  <img src="resources/image/navSearchG.svg" class="imgMenDesk2" alt="" />
+                  </a>
+                  <div id="Buscador" class="dropdown-menu contIngresar">
+                    <form  data-security-popup="hide" class="navbar-form navbar-left" role="search" method="post">
+                    <div class="form-group">
+                    <input type="text" name="queryStr" class="form-control" placeholder="Palabra Clave">
+                    </div>
+                    <button type="submit" class="btn btn-default">Buscar</button>
+                  </form>
+                  </div>
+                  </li>
+
+                  <li id="fondoG" class="">
+                  <a id="btnLogin" class="">
+                  <img id="logClose" class="imgIngresa1" src="resources/image/navUser.svg" alt="" />
+                  <img id="logOpen" class="imgIngresa2" src="resources/image/navUser.svg" alt="" />
+                  <span id="caretCambio" class="caretAfm">
+                  </span>
+                  </a>
+                  <div id="ingresoRadio" class="contIngresoRadio" )>
+                  <div class="nombreAyudaIngreso" data-toggle="modal" data-target="#idayuda">
+                  <button type="button" class="tooltipHelp " data-toggle="tooltip" data-placement="top" title="Ayuda de AfirmeNet" data-original-title="Ayuda de AfirmeNet">
+                  <img src="resources/image/Help.svg" alt="" />
+                  </button>
+                  <p>AfirmeNet</p>
+                  </div>
+                  <div class="ingresoDatos">
+                  <div class="radioUsuarioEmpresas">
+                  <div class="opcionCliente">
+                  <input id="personasId" type="radio" name="cliente" value="Usuario" checked>
+                  <label for="personasId">
+                  <span></span>
+                  <p>Personas</p>
+                  </label>
+                  </div>
+                  <div class="opcionCliente">
+                  <input id="empresasId" type="radio" name="cliente" value="Empresa">
+                  <label for="empresasId">
+                  <span ></span>
+                  <p>Empresas</p>
+                  </label>
+                  </div>
+                  </div>
+                  <form action="" method="post" autocomplete="off" >
+                  <div class="credentials">
+                  <div class="ingresoNumero">
+                  <input autocorrect="off" spellcheck="false" id="numContrato" type="text" style="text-transform: uppercase" name="UserId" placeholder="Usuario"  value="">
+                  </div>
+                  <div class="btnLoginRadio">
+                  <input type="submit" value="Ingresar">
+                  </div>
+                  </div>
+                  </form>
+                  </div>
+                  </div>
+                  </li>
+                  </div>
+               </ul>
+               </div>
+               <div>
+            </nav>
+            </div>
+         </header>
+      </header>
+      <!---- /header ----->
+
+      <!--- banner ---->
+      <section class="carouselHome seccGeneral">
+         <div id="5118cab2-e03c-4039-977b-e8ee8d37e01c" class="carousel slide" data-ride="carousel">
+            <div class="contBullets">
+               <ol class="carousel-indicators">
+                  <li data-target="#5118cab2-e03c-4039-977b-e8ee8d37e01c" data-slide-to="0" class="active"></li>
+                  <li data-target="#5118cab2-e03c-4039-977b-e8ee8d37e01c" data-slide-to="1" class=""></li>
+                  <li data-target="#5118cab2-e03c-4039-977b-e8ee8d37e01c" data-slide-to="2" class=""></li>
+                  <li data-target="#5118cab2-e03c-4039-977b-e8ee8d37e01c" data-slide-to="3" class=""></li>
+                  <li data-target="#5118cab2-e03c-4039-977b-e8ee8d37e01c" data-slide-to="4" class=""></li>
+               </ol>
+            </div>
+            <div class="carousel-inner" role="listbox">
+               <div class="item backDark opacity50 active">
+                  <div class="first-slide">
+                     <div class="imgCarruselHome">
+                        <img src="resources/image/b1.png" alt="">
+                     </div>
+                     <div class="container">
+                        <div class="carousel-caption">
+                           <h1>No importa como sea tu familia </h1>
+                           <p>Con Crédito Hipotecario podrás hacerla más grande</p>
+                           <div class="contBtnAf centerBtn">
+                              <a class="btnGeneral" href="#" data-security-popup="hide" role="button">
+                              VER MÁS
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item backLight opacity40">
+                  <div class="second-slide">
+                     <div class="imgCarruselHome">
+                        <img src="resources/image/b2.png" alt="">
+                     </div>
+                     <div class="container">
+                        <div class="carousel-caption">
+                           <h1> Obtén 3 meses de membresía gratis </h1>
+                           <p>al contratar un Paquete Acceso Total PyME</p>
+                           <div class="contBtnAf centerBtn">
+                              <a class="btnGeneral" href="#" data-security-popup="hide" role="button">
+                              Ver más
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item backDark opacity50">
+                  <div class="second-slide">
+                     <div class="imgCarruselHome">
+                        <img src="resources/image/b3.jpg" alt="">
+                     </div>
+                     <div class="container">
+                        <div class="carousel-caption">
+                           <div class="contBtnAf centerBtn">
+                              <a class="btnGeneral" href="#" data-security-popup="hide" role="button">
+                              VER MÁS
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item backDark opacity50">
+                  <div class="second-slide">
+                     <div class="imgCarruselHome">
+                        <img src="resources/image/b4.jpg" alt="">
+                     </div>
+                     <div class="container">
+                        <div class="carousel-caption">
+                           <h1>Regístrate y gana</h1>
+                           <p>Al contratar o incrementar tu saldo. Consulta bases de participación</p>
+                           <div class="contBtnAf centerBtn">
+                              <a class="btnGeneral" href="#" target="_blank" rel="noopener noreferrer" data-security-popup="hide" role="button">
+                              VER MÁS
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item backDark opacity50">
+                  <div class="second-slide">
+                     <div class="imgCarruselHome">
+                        <img src="resources/image/b5.jpg" alt="">
+                     </div>
+                     <div class="container">
+                        <div class="carousel-caption">
+                           <h1> </h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--- banner ---->
+
+      <!---- mobile box ----->
+      <div class="bgGris">
+         <div class="containerServicios">
+            <section class="servicios seccGeneral">
+               <div class="container">
+                  <div class="row">
+
+                     <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="contIndicador equalElement">
+                            <div class="rowAlt">
+                                <div class="contenidoIndicador">
+                                    <div class="col-sm-12 col-md-12 col-lg-8">
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                <div class="elementIndicador">
+                                                    <h3>Dólar</h3>
+                                                    <div class="infoIndicador">
+                                                        <h4>Compra</h4>
+                                                        <p>$18.70</p>
+                                                    </div>
+                                                    <div class="infoIndicador">
+                                                        <h4>Venta</h4>
+                                                        <p>$20.10</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                <div class="elementIndicador">
+                                                    <div class="contBtnCalculadora">
+                                                        <div class="btnCalculadora">
+                                                            <a href="/Divisas.html" data-security-popup="hide" title="Ir a Calculadora">
+                                   Ir a Calculadora
+                                </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12 col-lg-4">
+                                        <div class="elementIndicadorAlt">
+                                            <div class="infoIndicador">
+                                                <h4>UDIS</h4>
+                                                <p>7.591303</p>
+                                            </div>
+                                            <div class="infoIndicador">
+                                                <h4>CETES28</h4>
+                                                <p>9.19</p>
+                                            </div>
+                                            <div class="infoIndicador">
+                                                <h4>TIIE28</h4>
+                                                <p>9.6500</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contPie">
+                                        <p>*Información válida para Banca Electrónica y sujeta a cambio sin previo aviso.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                     <div class="contContacto equalElement" style="height: auto !important;">
+                        <div class="rowAlt">
+                           <div class="contenidoIndicadorAlt">
+                              <div class="headContacto">
+                                 <h3>Contáctanos</h3>
+                                 <a href="#" data-security-popup="hide" title="La Voz del Cliente">
+                                 <img src="resources/image/Call.svg" alt="" />La Voz del Cliente
+                                 </a>
+                              </div>
+                              <div class="listContacto">
+                                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 paddingAlt">
+                                    <div class="itemContacto">
+                                       <div class="icnContacto">
+                                          <div class="icnTitulo">
+                                             <h4>81 8318 3900</h4>
+                                          </div>
+                                       </div>
+                                       <div class="infoCont">
+                                          <a class="telAf" href="tel:+"> </a><br>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xs-8 col-sm-12 col-md-6 col-lg-5 paddingAlt">
+                                    <div class="itemContacto izqMargen">
+                                       <div class="icnContacto">
+                                          <div class="icnTitulo">
+                                             <h4> </h4>
+                                          </div>
+                                       </div>
+                                       <div class="infoCont">
+                                          <a href="mailto: "> </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 paddingAlt">
+                                    <div class="itemContacto">
+                                       <div class="icnContacto">
+                                          <div class="icnContenedor">
+                                             <a href="#">
+                                             <img src="resources/image/Chat.svg" alt="" />
+                                             </a>
+                                          </div>
+                                          <div class="chatStatus infoCont">
+                                             <h4> Chat
+                                                <span>&#9679;</span>
+                                             </h4>
+                                             <p>Online</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div> 
+     <!---- /mobile box ----->
+
+
+
+    <!----- first details ---->
+      <section class="bloqueInfo seccGeneral">
+         <div class="containerAltL">
+            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 noPadding">
+               <div class="imgBack scrollflow -slide-left -opacity">
+                  <img src="resources/image/escribenos-nosotrosvamos2020.png" alt="" />
+               </div>
+            </div>
+            <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 noPadding">
+               <div class="txtInfo scrollflow -slide-top -opacity">
+                  <h6>Atención en línea</h6>
+                  <h3>Escríbenos, nosotros vamos.</h3>
+                  <p><strong>&iexcl;Decide Hoy y obt&eacute;n el producto ideal para ti sin salir de casa!</strong></p>
+                  <p><span style="color:#bae557"><strong>Solicita Hoy&nbsp;</strong></span><strong>el producto bancario que necesitas sin tener que venir a una sucursal y en menor tiempo.</strong></p>
+                  <div class="contBtnAf">
+                     <a class="btnGeneral btnMd" href="#" data-security-popup="hide" title="Ver más">
+                     Ver más
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+    <!----- /first details ---->
+
+   
+    <!----- second details ---->
+    <section class="infoPersonal seccGeneral">
+        <div class="containerAltR">
+        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 noPadding showMobile">
+            <div class="imgBack scrollflow -slide-right -opacity">
+                <img src="resources/image/Banner-HOME.jpg" alt="" />
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 noPadding">
+            <div class="txtInfo scrollflow -slide-top -opacity">
+                <h6></h6>
+                <h3>¡Contamos con la Tarjeta de Crédito de tus sueños!</h3>
+                <div class="contBtnAf">
+                    <a class="btnGeneral btnMd" href="#" data-security-popup="hide" title="SOLICÍTALA AQUÍ">
+                    SOLICÍTALA AQUÍ
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-5 col-md-5 col-lg-5 noPadding showDesktop">
+            <div class="imgBack scrollflow -slide-left -opacity">
+                <img src="resources/image/Banner-HOME.jpg" alt="TDC Afirme" />
+            </div>
+        </div>
+        </div>
+    </section>
+    <!----- /second details ---->
+
+    <!----- /third details ---->
+    <section class="bloqueInfo seccGeneral">
+        <div class="containerAltL">
+        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 noPadding">
+            <div class="imgBack scrollflow -slide-left -opacity">
+                <img src="resources/image/huaweiweb.png" alt="" />
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 noPadding">
+            <div class="txtInfo scrollflow -slide-top -opacity">
+                <h6>AFIRME MÓVIL</h6>
+                <h3>¡Afirme Móvil ahora disponible en dispositivos Huawei!</h3>
+                <p><span style="font-family:Source Sans Pro">Ya puedes disfrutar de Afirme M&oacute;vil desde tu dispositivo huawei, desc&aacute;rgala en <a href="#"><strong>AppGallery</strong></a></span></p>
+                <div class="contBtnAf">
+                    <a class="btnGeneral btnMd" href="#" data-security-popup="hide" title="Ver más">
+                    Ver más
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!----- /third details ---->
+     
+    <!----- fourth details ---->
+    <section class="infoPersonal seccGeneral">
+        <div class="containerAltR">
+        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 noPadding showMobile">
+            <div class="imgBack scrollflow -slide-right -opacity">
+                <img src="resources/image/Afirme-BannersMedios-home.png" alt="" />
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 noPadding">
+            <div class="txtInfo scrollflow -slide-top -opacity">
+                <h6></h6>
+                <h3>Una Solución de pago transparente para tu comercio electrónico.</h3>
+                <p><strong><img alt="" src="resources/image/icono-web-shieldgate.png" style="height:45px; width:241px" /></strong></p>
+                <div class="contBtnAf">
+                    <a class="btnGeneral btnMd" href="#" data-security-popup="hide" title="Ver más">
+                    Ver más
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-5 col-md-5 col-lg-5 noPadding showDesktop">
+            <div class="imgBack scrollflow -slide-left -opacity">
+                <img src="resources/image/Afirme-BannersMedios-home.png" alt="" />
+            </div>
+        </div>
+        </div>
+    </section>
+    <!----- /fourth details ---->
+     
+    <!----- fifth details ---->
+    <section class="bloqueInfo seccGeneral">
+        <div class="containerAltL">
+        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 noPadding">
+            <div class="imgBack scrollflow -slide-left -opacity">
+                <img src="resources/image/home-seguridad.png" alt="" />
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 noPadding">
+            <div class="txtInfo scrollflow -slide-top -opacity">
+                <h6>¡Evita ser víctima de un fraude!</h6>
+                <h3>Afirme no solicita la descarga de software a tu equipo de cómputo.</h3>
+                <div class="contBtnAf">
+                    <a class="btnGeneral btnMd" href="#" data-security-popup="hide" title="Ver más">
+                    Ver más
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!----- /fifth details ---->
+
+    <!----- six details ---->
+    <section class="infoPersonal seccGeneral">
+        <div class="containerAltR">
+        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 noPadding showMobile">
+            <div class="imgBack scrollflow -slide-right -opacity">
+                <img src="resources/image/Afirme-BannersMedios-seguros.png" alt="" />
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 noPadding">
+            <div class="txtInfo scrollflow -slide-top -opacity">
+                <h6>Seguros Afirme</h6>
+                <h3>Cotiza y Compra tus seguros en línea</h3>
+                <p><strong><span style="color:#333333">Conoce <a href="#">nuestros seguros</a>, cuentas con diferentes planes y formas de pago acorde a tus necesidades.</span></strong></p>
+                <div class="contBtnAf">
+                    <a class="btnGeneral btnMd" href="#" target="_blank" rel="noopener noreferrer" data-security-popup="hide" title="Cotiza y compra">
+                    Cotiza y compra
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-5 col-md-5 col-lg-5 noPadding showDesktop">
+            <div class="imgBack scrollflow -slide-left -opacity">
+                <img src="resources/image/Afirme-BannersMedios-seguros.png" alt="" />
+            </div>
+        </div>
+        </div>
+    </section>
+    <!----- /six details ---->
+
+    <!---- oppurtunity -->
+    <section class=" gridCuentas gridAltern">
+        <div class="container">
+        <div class="ttlSeccion">
+            <h2>¡Oportunidades Para Ti!</h2>
+        </div>
+        <div class="CuentasCList">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 scrollflow -slide-left -opacity">
+                    <div class="cuenta-tarjeta EqualAltura">
+                    <div class="imgTarjeta_Credito">
+                        <img src="resources/image/Home-bolsadetrabajo4.png" alt="" />
+                    </div>
+                    <div class="txt-cuenta-tarjeta EqualAlturaTxt">
+                        <h3>Bolsa de Trabajo</h3>
+                        <h5>Para Afirme es primordial identificar e integrar al mejor talento, por lo que ponemos a tu disposición nuestra bolsa de trabajo Oportunidades Para Ti, la cual será tu primer contacto hacia nuestra institución y cultura
+                            de colaboración.
+                        </h5>
+                        <ul></ul>
+                    </div>
+                    <div class="contenedorBotones">
+                        <div class="rowAlt botonCentro">
+                            <div class="col-sm-12 col-md-6 col-lg-6" style="display:none;">
+                                <div class="contBtnAf contorno">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                <div class="contBtnAf">
+                                <a class="btnVerde" href="#" target="_blank" rel="noopener noreferrer" data-security-popup="hide" title="Ver Vacantes">Ver Vacantes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!---- /oppurtunity -->
+
+    <!------ bottom left carousel ----->
+    <section class="carrusel seccGeneral">
+
+        <div class="col-sm-6 col-md-6 col-lg-6 noPadding">
+        <div class="carruselNoticias slide scrollflow -slide-top -opacity">
+            <div class="ttlCarrusel">
+                <h3>Noticias Afirme</h3>
+                <a href="#" data-security-popup="hide" title="">Ver más Noticias</a>
+            </div>
+            <div id="dc59b10c-4ccf-43c7-a324-d1daec654d6a" class="carouselNoticiasAlt carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 noPadding">
+                            <div class="contLeftImagen">
+                                <img src="resources/image/ImagenCarrusel-sorteobuenfin.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 noPadding">
+                            <div class="contRight">
+                                <h4>Entrega SAT premio mayor del Sorteo de El Buen Fin</h4>
+                                <p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:14px"><strong><span style="font-family:Source Sans Pro">El Servicio de Administraci&oacute;n Tributaria (SAT), entreg&oacute; el 28 de diciembre el premio m&aacute;ximo de 260 mil pesos, correspondiente a una bolsa de 100 millones de pesos entre </span></strong>
+                                </span>
+                                </p>
+                                <div class="footCarrusel">
+                                <span>19-ene-2022</span>
+                                </div>
+                                <div class="foot-vmas">
+                                <a href="#" title="Conoce más">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="item ">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 noPadding">
+                            <div class="contLeftImagen">
+                                <img src="resources/image/ImagenCarrusel-patrocinadorqueretaro.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 noPadding">
+                            <div class="contRight">
+                                <h4>Es Afirme Nuevo Patrocinador y Banco Oficial del Club de Futbol Querétaro</h4>
+                                <p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:14px"><span style="font-family:Source Sans Pro"><strong>Afirme y el Club de Futbol Quer&eacute;taro formalizaron este 23 de diciembre, el convenio mediante el cual el banco patrocinar&aacute; a...</strong></span></span>
+                                </p>
+                                <div class="footCarrusel">
+                                <span>19-ene-2022</span>
+                                </div>
+                                <div class="foot-vmas">
+                                <a href="#" title="Conoce más">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="item ">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 noPadding">
+                            <div class="contLeftImagen">
+                                <img src="resources/image/ImagenCarrusel-reconocimientoafirme.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 noPadding">
+                            <div class="contRight">
+                                <h4>Recibe Afirme reconocimiento en la Bolsa Mexicana de Valores</h4>
+                                <p><span style="font-size:14px"><span style="font-family:Source Sans Pro"><strong>Afirme celebr&oacute; su d&eacute;cimo aniversario de la primera emisi&oacute;n de deuda en la Bolsa Mexicana de Valores (BMV), con una ceremonia encabezada por...</strong></span></span>
+                                </p>
+                                <div class="footCarrusel">
+                                <span>25-ene-2022</span>
+                                </div>
+                                <div class="foot-vmas">
+                                <a href="#" title="Conoce más">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="item ">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 noPadding">
+                            <div class="contLeftImagen">
+                                <img src="resources/image/carrusel-gptw2021-4.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 noPadding">
+                            <div class="contRight">
+                                <h4>Afirme, Great Place to work 2021</h4>
+                                <p><span style="font-size:14px"><span style="font-family:Source Sans Pro"><strong>Banco Afirme</strong>&nbsp;nuevamente ha sido certificado como una de Los Mejores Lugares Para Trabajar en M&eacute;xico 2021 por&nbsp;<strong>Great Place to Work Institute M&eacute;xico*</strong>.</span></span>
+                                </p>
+                                <div class="footCarrusel">
+                                <span>16-mar-2021</span>
+                                </div>
+                                <div class="foot-vmas">
+                                <a href="#" title="Conoce más">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="item ">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 noPadding">
+                            <div class="contLeftImagen">
+                                <img src="resources/image/ImagenResumen-heb2.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 noPadding">
+                            <div class="contRight">
+                                <h4>H-E-B, Banca Afirme y Visa lanzan tarjeta con mayor cashback en el segmento de supermercados en el mercado mexicano</h4>
+                                <p><span style="font-size:14px"><span style="font-family:Source Sans Pro"><strong>La tarjeta de cr&eacute;dito H-E-B-Afirme brinda cashback de 4% en todas las compras en H-E-B</strong></span></span>
+                                </p>
+                                <div class="footCarrusel">
+                                <span>27-oct-2020</span>
+                                </div>
+                                <div class="foot-vmas">
+                                <a href="#" title="Conoce más">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="controlsSlide">
+                    <a class="left carousel-control" href="#dc59b10c-4ccf-43c7-a324-d1daec654d6a" role="button" data-slide="prev">
+                    <img src="resources/image/icnPrev.svg" alt="">
+                    </a>
+                    <a class="right carousel-control" href="#dc59b10c-4ccf-43c7-a324-d1daec654d6a" role="button" data-slide="next">
+                    <img src="resources/image/icnNext.svg" alt="">
+                    </a>
+                    <ol class="carousel-indicators">
+                    <li data-target="#dc59b10c-4ccf-43c7-a324-d1daec654d6a" data-slide-to="0" class="active"></li>
+                    <li data-target="#dc59b10c-4ccf-43c7-a324-d1daec654d6a" data-slide-to="1" class=""></li>
+                    <li data-target="#dc59b10c-4ccf-43c7-a324-d1daec654d6a" data-slide-to="2" class=""></li>
+                    <li data-target="#dc59b10c-4ccf-43c7-a324-d1daec654d6a" data-slide-to="3" class=""></li>
+                    <li data-target="#dc59b10c-4ccf-43c7-a324-d1daec654d6a" data-slide-to="4" class=""></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-sm-6 col-md-6 col-lg-6 noPadding">
+        <div class="carruselAvisos slide scrollflow -slide-top -opacity">
+            <div class="ttlCarrusel">
+                <h3>Avisos</h3>
+                <a href="#" data-security-popup="hide" title="Ver todos los Avisos">Ver todos los Avisos</a>
+            </div>
+            <div id="ab442312-cb1d-40a2-b62c-abef88e0c753" class="carouselAvisosAlt carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                    <div class="contSlideAviso">
+                        <h4>Modificaciones a Contrato Múltiple</h4>
+                        <p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:14px"><span style="font-family:Source Sans Pro">En cumplimiento a las &ldquo;Disposiciones de car&aacute;cter general en materia de transparencia aplicables a las instituciones de cr&eacute;dito y sociedades financieras de objeto m&uacute;ltiple, entidades reguladas&rdquo; as&iacute; como a lo establecido en la &ldquo;Ley para la Transparencia y Ordenamiento de los Servicios Financieros&rdquo;, te informamos que se modific&oacute; el clausulado y las condiciones generales establecidas en tu Contrato M&uacute;ltiple, aplicable a los siguientes productos:</span></span></p>
+                        <div class="footCarrusel">
+                            <div class="contDatCarousel">
+                                <span>01-abr-2022</span>
+                                <a class="catNoticia" href="#" title="Nacional">
+                                </a>
+                            </div>
+                            <div class="contBtnAf btnRight">
+                                <a class="btnGeneral btnMd" href="#" title="Conoce más">Conoce más</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="item ">
+                    <div class="contSlideAviso">
+                        <h4>Modificación Tasa de Retención ISR 2022</h4>
+                        <p style="text-align:justify"><span style="font-size:15px"><span style="font-family:Source Sans Pro">Te informamos que, durante el ejercicio fiscal 2022, la tasa de retenci&oacute;n anual a que se refieren los&nbsp;<strong>art&iacute;culos 54&deg; y 135&deg; de la Ley del Impuesto sobre la Renta</strong>, ser&aacute; del&nbsp;<strong>0.08 por ciento</strong>. Derivado de esto, el pago de inter&eacute;s neto del periodo mostrado en la constancia o recibo de valores de las inversiones a plazo generadas en 2021 con vencimiento en 2022, puede variar de acuerdo a la nueva tasa de retenci&oacute;n anual.</span></span></p>
+                        <div class="footCarrusel">
+                            <div class="contDatCarousel">
+                                <span>03-ene-2022</span>
+                                <a class="catNoticia" href="#" title="Nacional">
+                                </a>
+                            </div>
+                            <div class="contBtnAf btnRight">
+                                <a class="btnGeneral btnMd" href="#" title="Conoce más">Conoce más</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="item ">
+                    <div class="contSlideAviso">
+                        <h4>Activación de Geolocalización </h4>
+                        <p style="margin-left:0cm; margin-right:0cm; text-align:start"><span style="font-size:16px"><span style="font-family:Source Sans Pro"><strong>Todas las entidades financieras en M&eacute;xico,&nbsp;</strong>de conformidad con las Disposiciones de car&aacute;cter general a las que se refiere el art&iacute;culo 115 de la Ley de Instituciones de Cr&eacute;dito, a partir del <strong>22 de febrero de 2021</strong>, est&aacute;n obligadas a recabar la <strong>ubicaci&oacute;n/geolocalizaci&oacute;n</strong> del dispositivo a trav&eacute;s del cual nuestros clientes deseen llevar a cabo cualquier transacci&oacute;n monetaria&nbsp;a trav&eacute;s de Banca por Internet,por lo que usted deber&aacute; otorgar su consentimiento a Banca AFIRME, al ingresar dentro de su <strong>Afirme M&oacute;vil y AfirmeNet</strong>.</span></span></p>
+                        <div class="footCarrusel">
+                            <div class="contDatCarousel">
+                                <span>05-ene-2021</span>
+                                <a class="catNoticia" href="#" title="Nacional">
+                                </a>
+                            </div>
+                            <div class="contBtnAf btnRight">
+                                <a class="btnGeneral btnMd" href="#" title="Conoce más">Conoce más</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="item ">
+                    <div class="contSlideAviso">
+                        <h4> Regulación INE para Cuentas de Nómina Nivel 4</h4>
+                        <p style="margin-left:0cm; margin-right:0cm"><span style="font-size:16px"><span style="font-family:Source Sans Pro">Por disposici&oacute;n oficial, todas las nuevas cuentas deben concluir el Proceso de Validaci&oacute;n de Identidad ante el INE en un periodo no mayor a 180 d&iacute;as (6 meses) posterior a su apertura para evitar que sean bloqueadas.</span></span></p>
+                        <p style="margin-left:0cm; margin-right:0cm"><span style="font-size:16px"><span style="font-family:Source Sans Pro">Recuerda que puedes acudir a cualquier sucursal Afirme, solo deben presentar su Identificaci&oacute;n oficial INE/IFE y comprobante de domicilio.</span></span></p>
+                        <div class="footCarrusel">
+                            <div class="contDatCarousel">
+                                <span>10-feb-2021</span>
+                                <a class="catNoticia" href="#" title="Nacional">
+                                </a>
+                            </div>
+                            <div class="contBtnAf btnRight">
+                                <a class="btnGeneral btnMd" href="#" title="Conoce más">Conoce más</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="item ">
+                    <div class="contSlideAviso">
+                        <h4>Modificaciones a Contrato Mixto Paquetes PyME</h4>
+                        <p style="margin-left:0cm; margin-right:0cm"><span style="font-size:16px"><span style="font-family:Source Sans Pro">En cumplimiento a las &ldquo;Disposiciones de car&aacute;cter general en materia de transparencia aplicables a las instituciones de cr&eacute;dito y sociedades financieras de objeto m&uacute;ltiple, entidades reguladas&rdquo; as&iacute; como lo establecido en la &ldquo;Ley para la Transparencia y Ordenamiento de los Servicios Financieros&rdquo;, te informamos que se modificaron las condiciones generales establecidas en tu <strong>Contrato Mixto de Paquetes PyME.</strong></span></span></p>
+                        <div class="footCarrusel">
+                            <div class="contDatCarousel">
+                                <span>03-jun-2021</span>
+                                <a class="catNoticia" href="#" title="Nacional">
+                                </a>
+                            </div>
+                            <div class="contBtnAf btnRight">
+                                <a class="btnGeneral btnMd" href="#" title="Conoce más">Conoce más</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="item ">
+                    <div class="contSlideAviso">
+                        <h4>Aviso Modificaciones Contrato Cuenta Mujer Sí.</h4>
+                        <p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:14px"><span style="font-family:Source Sans Pro">Estimado Cliente:<br />
+                            En cumplimiento a las &ldquo;Disposiciones de car&aacute;cter general en materia de transparencia aplicables a las instituciones de cr&eacute;dito y sociedades financieras de objeto m&uacute;ltiple, entidades reguladas&rdquo; as&iacute; como a lo establecido en la &ldquo;Ley para la Transparencia y Ordenamiento de los Servicios Financieros&rdquo;...</span></span>
+                        </p>
+                        <div class="footCarrusel">
+                            <div class="contDatCarousel">
+                                <span>04-abr-2022</span>
+                                <a class="catNoticia" href="#" title="Nacional">
+                                </a>
+                            </div>
+                            <div class="contBtnAf btnRight">
+                                <a class="btnGeneral btnMd" href="#" title="Conoce más">Conoce más</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="item ">
+                    <div class="contSlideAviso">
+                        <h4>Dudas sobre Transferencias SPEI</h4>
+                        <p style="margin-left:0cm; margin-right:0cm">Para dudas sobre transferencias SPEI enviadas o por recibir de otros Bancos, marque 800 823 47 63 donde nuestros asesores le atender&aacute;n.</p>
+                        <div class="footCarrusel">
+                            <div class="contDatCarousel">
+                                <span>18-oct-2018</span>
+                                <a class="catNoticia" href="#" title="Nacional">
+                                </a>
+                            </div>
+                            <div class="contBtnAf btnRight">
+                                <a class="btnGeneral btnMd" href="#" title="Conoce más">Conoce más</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="item ">
+                    <div class="contSlideAviso">
+                        <h4>Aviso de Seguridad</h4>
+                        <p>Estimado Cliente:&nbsp;le informamos que Afirme Grupo Financiero <strong>NO</strong> solicita v&iacute;a telef&oacute;nica o correo electr&oacute;nico informaci&oacute;n confidencial como &ldquo;<strong>datos de cuenta bancaria</strong>&rdquo;,
+                            &ldquo;<strong>claves o contrase&ntilde;as</strong>&rdquo;, &ldquo;<strong>acceso a sus equipos de c&oacute;mputo</strong>&rdquo; o &ldquo;<strong>descargar alg&uacute;n software</strong>&rdquo;.
+                        </p>
+                        <div class="footCarrusel">
+                            <div class="contDatCarousel">
+                                <span>11-feb-2019</span>
+                                <a class="catNoticia" href="#" title="Nacional">
+                                </a>
+                            </div>
+                            <div class="contBtnAf btnRight">
+                                <a class="btnGeneral btnMd" href="#" title="Conoce más">Conoce más</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="item ">
+                    <div class="contSlideAviso">
+                        <h4>Enviar o Recibir Transferencias de Fondos</h4>
+                        <p style="margin-left:0cm; margin-right:0cm">Le informamos que, de conformidad con las Disposiciones de car&aacute;cter general a las que se refiere el art&iacute;culo 115 de la Ley de Instituciones de Cr&eacute;dito, al momento de enviar o recibir transferencias
+                            de fondos nacionales en moneda extranjera as&iacute; como transferencia de fondos internacionales, usted otorga su consentimiento a Afirme para que &eacute;sta &uacute;ltima proporcione al Banco de M&eacute;xico la
+                            informaci&oacute;n y documentaci&oacute;n requerida para dar cumplimiento a la normatividad aplicable.
+                        </p>
+                        <div class="footCarrusel">
+                            <div class="contDatCarousel">
+                                <span>06-may-2020</span>
+                                <a class="catNoticia" href="#" title="Nacional">
+                                </a>
+                            </div>
+                            <div class="contBtnAf btnRight">
+                                <a class="btnGeneral btnMd" href="#" title="Conoce más">Conoce más</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+                <div class="controlsSlide">
+                    <a class="left carousel-control" href="#ab442312-cb1d-40a2-b62c-abef88e0c753" role="button" data-slide="prev">
+                    <img src="resources/image/icnPrev.svg" alt="">
+                    </a>
+                    <a class="right carousel-control" href="#ab442312-cb1d-40a2-b62c-abef88e0c753" role="button" data-slide="next">
+                    <img src="resources/image/icnNext.svg" alt="">
+                    </a>
+                    <ol class="carousel-indicators">
+                    <li data-target="#ab442312-cb1d-40a2-b62c-abef88e0c753" data-slide-to="0" class="active"></li>
+                    <li data-target="#ab442312-cb1d-40a2-b62c-abef88e0c753" data-slide-to="1" class=""></li>
+                    <li data-target="#ab442312-cb1d-40a2-b62c-abef88e0c753" data-slide-to="2" class=""></li>
+                    <li data-target="#ab442312-cb1d-40a2-b62c-abef88e0c753" data-slide-to="3" class=""></li>
+                    <li data-target="#ab442312-cb1d-40a2-b62c-abef88e0c753" data-slide-to="4" class=""></li>
+                    <li data-target="#ab442312-cb1d-40a2-b62c-abef88e0c753" data-slide-to="5" class=""></li>
+                    <li data-target="#ab442312-cb1d-40a2-b62c-abef88e0c753" data-slide-to="6" class=""></li>
+                    <li data-target="#ab442312-cb1d-40a2-b62c-abef88e0c753" data-slide-to="7" class=""></li>
+                    <li data-target="#ab442312-cb1d-40a2-b62c-abef88e0c753" data-slide-to="8" class=""></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <!------ /bottom left carousel ----->
+
+    <!---- brand ---->
+    <section class=" partners seccGeneral scrollflow -pop -opacity">
+        <div class="container">
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                <div class="contLogotipo">
+                    <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="show" title="Ir">
+                    <img src="resources/image/IPAB.png" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                <div class="contLogotipo">
+                    <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="show" title="Ir">
+                    <img src="resources/image/SAT.png" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                <div class="contLogotipo">
+                    <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="show" title="Ir">
+                    <img src="resources/image/Buro.png" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                <div class="contLogotipo">
+                    <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="show" title="Ir">
+                    <img src="resources/image/ABM.png" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                <div class="contLogotipo">
+                    <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="show" title="Ir">
+                    <img src="resources/image/condusef2.png" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                <div class="contLogotipo">
+                    <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="show" title="Ir">
+                    <img src="resources/image/AMIPCI.png" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!---- /brand ---->
+
+    <!---- top banner afirmeNet modal ---->
+      <section class="modalAyuda">
+         <div class="container">
+            <div class="modal fade bs-example-modal-lg" id="idayuda" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+               <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                     <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6 noPadding">
+                           <div class="modal-left">
+                              <div class="modal-headerMobile showMobileLarge">
+                                 <button type="button" class="btn-cerrar" data-dismiss="modal"></button>
+                              </div>
+                              <div class="imgModal">
+                                 <img src="resources/image/dudaAfirme.svg" alt="" />
+                              </div>
+                              <div class="ttlModalLeft">
+                                 <h2>Ayuda AfirmeNet</h2>
+                              </div>
+                              <div class="cntAyuda">
+                                 <div class="txtAyuda">
+                                    <ul class="nav nav-pills">
+                                       <p> </p>
+                                       <li class="active">
+                                          <a href="#idcontrato" data-toggle="tab">¿Cómo contrato AfirmeNet?</a>
+                                       </li>
+                                       <p> </p>
+                                       <li class="">
+                                          <a href="#idactivar" data-toggle="tab">¿Cómo ingreso a mi AfirmeNet? </a>
+                                       </li>
+                                       <p> </p>
+                                       <li class="">
+                                          <a href="#idcontrasenia" data-toggle="tab">Olvidé mi contraseña</a>
+                                       </li>
+                                       <p> </p>
+                                       <li class="">
+                                          <a href="#idsincronizar" data-toggle="tab">Sincronización de Token</a>
+                                       </li>
+                                       <p> </p>
+                                       <li class="">
+                                          <a href="#idpreguntas" data-toggle="tab">Quiero conocer más de AfirmeNet</a>
+                                       </li>
+                                       <p> </p>
+                                       <li class="">
+                                          <a href="#idAfirmeNetEmpresas" data-toggle="tab">Guías de ayuda AfirmeNet Empresas</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6 noPadding">
+                           <div class="modal-right tab-content clearfix">
+                              <div class="modal-header showDesktopLarge">
+                                 <button type="button" class="btn-cerrar" data-dismiss="modal"></button>
+                              </div>
+
+                              <div class="ttlModalLeft">
+                                 <h2>Conoce más...</h2>
+                                 <span></span>
+                              </div>
+
+                              <div class="cntAyudaRight tab-pane active" id="idcontrato">
+                                 <p>Para contratar tu servicio de AfirmeNet acude a tu sucursal. </p>
+                                 <div class="txtAyuda">
+                                    <ul>
+                                       <li>
+                                          <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="hide" title="">Requisitos - Personas</a>
+                                       </li>
+                                       <li>
+                                          <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="hide" title="">Requisitos - Empresa o PyME</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="txtAyuda margen">
+                                    <ul>
+                                    </ul>
+                                 </div>
+                              </div>
+
+                              <div class="cntAyudaRight tab-pane" id="idactivar">
+                                 <p>Para ingresar a tu AfirmeNet captura tu número de contrato, éste se encuentra informado en el contrato que se te entregó en sucursal. </p>
+                                 <div class="txtAyuda">
+                                    <ul>
+                                       <li>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="txtAyuda margen">
+                                    <p>Si aún no activas tu servicio realiza los siguientes pasos:</p>
+                                    <ul>
+                                       <li>
+                                          <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="hide" title="">Pasos para activar tu token</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+
+                              <div class="cntAyudaRight tab-pane" id="idcontrasenia">
+                                 <p>Captura tu contrato en la sección de login de Afirmenet, y posteriormente te aparecerá la opción para recuperar tu contraseña.</p>
+                                 <div class="txtAyuda">
+                                    <ul>
+                                    </ul>
+                                 </div>
+                                 <div class="txtAyuda margen">
+                                    <ul>
+                                       <li>
+                                       </li>
+                                       <li>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+
+                              <div class="cntAyudaRight tab-pane" id="idsincronizar">
+                                 <p>La sincronización sirve para asegurar el correcto funcionamiento de tu token.</p>
+                                 <div class="txtAyuda">
+                                    <ul>
+                                       <li>
+                                          <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="hide" title="">Sincronizar Token</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="txtAyuda margen">
+                                    <ul>
+                                    </ul>
+                                 </div>
+                              </div>
+
+                              <div class="cntAyudaRight tab-pane" id="idpreguntas">
+                                 <p>Entérate de todo lo que tu servicio de AfirmeNet te ofrece</p>
+                                 <div class="txtAyuda">
+                                    <ul>
+                                       <li>
+                                          <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="hide" title="">Banca en línea - Personas</a>
+                                       </li>
+                                       <li>
+                                          <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="hide" title="">Banca en Línea - Empresa o PyME</a>
+                                       </li>
+                                       <li>
+                                          <a href="#" data-security-popup="hide" title="">Preguntas frecuentes</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="txtAyuda margen">
+                                    <ul>
+                                    </ul>
+                                 </div>
+                              </div>
+
+                              <div class="cntAyudaRight tab-pane" id="idAfirmeNetEmpresas">
+                                 <p></p>
+                                 <div class="txtAyuda">
+                                    <ul>
+                                    </ul>
+                                 </div>
+                                 <div class="txtAyuda margen">
+                                    <p>Consulta las guías para AfirmeNet Empresas</p>
+                                    <ul>
+                                       <li>
+                                          <a href="#" data-security-popup="hide" title="Guía de activación Tarjeta de Débito Acceso Total en AfirmeNet">Guía de activación Tarjeta de Débito Acceso Total en AfirmeNet</a>
+                                       </li>
+                                       <li>
+                                          <a href="#" data-security-popup="hide" title="Configuración de permisos Usuario Operador">Configuración de permisos Usuario Operador</a>
+                                       </li>
+                                       <li>
+                                          <a href="#" data-security-popup="hide" title="Guía de activación de Token">Guía de activación de Token</a>
+                                       </li>
+                                       <li>
+                                          <a href="#" data-security-popup="hide" title="Guía de creación de Usuarios Operador">Guía de creación de Usuarios Operador</a>
+                                       </li>
+                                       <li>
+                                          <a href="#" data-security-popup="hide" title="Guía de reemplazo de Token">Guía de reemplazo de Token</a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+    <!---- top banner afirmeNet modal ---->
+ 
+    <!--- footer ----->
+    <footer class="showDesk">
+        <div class="container">
+        <div class="footTop">
+            <div class="col-sm-5 col-md-5 col-lg-5">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <h4>NUESTRO GRUPO</h4>
+                    <ul>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Quiénes somos">Quiénes somos</a>
+                    </li>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Preguntas frecuentes">Preguntas frecuentes</a>
+                    </li>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Contáctanos">Contáctanos</a>
+                    </li>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Información Financiera">Información Financiera</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="hide" title="Afirme Seguros">Afirme Seguros</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="hide" title="Almacenadora">Almacenadora</a>
+                    </li>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Inmuebles Afirme">Inmuebles Afirme</a>
+                    </li>
+                    <li>
+                        <a title="Crédito Sí">Crédito Sí</a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <h4>CONTACTO</h4>
+                    <ul>
+                    <li>
+                        <a title="81 8318 3990">81 8318 3990</a>
+                    </li>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="AfirmeTel">AfirmeTel</a>
+                    </li>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Ubicación">Ubicación</a>
+                    </li>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Whatsapp">Whatsapp</a>
+                    </li>
+                    <li>
+                        <a title="#">afirmeresponde@afirme.com</a>
+                    </li>
+                    <li></li>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Bolsa de Trabajo">Bolsa de Trabajo</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-7 col-md-7 col-lg-7">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <h4>DESCARGA AFIRME MOVIL</h4>
+                    <ul class="listIcons">
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="show" title="Huawei">
+                        <img src="resources/image/huawei.svg" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-security-popup="hide">
+                        <img src="resources/image/Apple.svg" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Play Store">
+                        <img src="resources/image/Android.svg" alt=""/>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <h4>REDES SOCIALES</h4>
+                    <ul class="listIcons">
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Facebook">
+                        <img src="resources/image/Facebook.svg" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Twitter">
+                        <img src="resources/image/Twitter.svg" alt=""/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Whatsapp">
+                        <img src="resources/image/whatsapp-01.svg" alt=""/>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <h4>Información Legal</h4>
+                    <ul>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Aviso Legal">Aviso Legal</a>
+                    </li>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Consulta de Costos y Comisiones de nuestros productos">Consulta de Costos y Comisiones de nuestros productos</a>
+                    </li>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Datos CONDUSEF">Datos CONDUSEF</a>
+                    </li>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Datos UNE">Datos UNE</a>
+                    </li>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Seguridad">Seguridad</a>
+                    </li>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Aviso de privacidad">Aviso de privacidad</a>
+                    </li>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Productos protegidos por el IPAB">Productos protegidos por el IPAB</a>
+                    </li>
+                    <li>
+                        <a href="#" data-security-popup="hide" title="Buro de Entidades Financieras">Buro de Entidades Financieras</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footLegales">
+            <p>Derechos Reservados @ Banca Afirme, S.A., Institución de Banca Múltiple, Afirme Grupo Financiero. 2022 </p>
+        </div>
+        </div>
+    </footer>
+    <!--- footer ----->
+
+
+    <!--- footer mobile ----->
+      <footer class="showMobile">
+         <div class="footerMobile">
+            <div class="container">
+               <div class="footTop panel-group" role="tablist" id="accordion" aria-multiselectable="true">
+                  <div class="acordionFooter">
+                     <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading1">
+                           <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#colapse1" aria-expanded="false" aria-controls="#colapse1">
+                              NUESTRO GRUPO
+                              <span></span>
+                              </a>
+                           </h4>
+                        </div>
+                        <div id="colapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1" aria-expanded="false" style="">
+                           <div class="panel-body">
+                              <ul>
+                                 <li>
+                                    <a href="#" data-security-popup="hide" title="Quiénes somos">Quiénes somos</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" data-security-popup="hide" title="Preguntas frecuentes">Preguntas frecuentes</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" data-security-popup="hide" title="Contáctanos">Contáctanos</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" data-security-popup="hide" title="Información Financiera">Información Financiera</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="hide" title="Afirme Seguros">Afirme Seguros</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="hide" title="Almacenadora">Almacenadora</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" data-security-popup="hide" title="Inmuebles Afirme">Inmuebles Afirme</a>
+                                 </li>
+                                 <li>
+                                    <a title="Crédito Sí">Crédito Sí</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading2">
+                           <h4 class="panel-title">
+                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#colapse2" aria-expanded="false" aria-controls="#colapse2">
+                              CONTACTO
+                              <span></span>
+                              </a>
+                           </h4>
+                        </div>
+                        <div id="colapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2" aria-expanded="false" style="">
+                           <div class="panel-body">
+                              <ul>
+                                 <li>
+                                    <a title="81 8318 3990">81 8318 3990</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" data-security-popup="hide" title="AfirmeTel">AfirmeTel</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" data-security-popup="hide" title="Ubicación">Ubicación</a>
+                                 </li>
+                                 <li>
+                                    <a href="#" data-security-popup="hide" title="Whatsapp">Whatsapp</a>
+                                 </li>
+                                 <li>
+                                    <a title="">afirmeresponde@afirme.com</a>
+                                 </li>
+                                 <li>
+                                 </li>
+                                 <li>
+                                    <a href="#" data-security-popup="hide" title="Bolsa de Trabajo">Bolsa de Trabajo</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 noPadding">
+                     <h4>DESCARGA AFIRME MOVIL</h4>
+                     <ul class="listIcons">
+                        <li>
+                           <a href="#" target="_blank" rel="noopener noreferrer" data-security-popup="show" title="Huawei">
+                           <img src="resources/image/huawei.svg" alt=""/>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" data-security-popup="hide">
+                           <img src="resources/image/Apple.svg" alt=""/>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" data-security-popup="hide" title="Play Store">
+                           <img src="resources/image/Android.svg" alt=""/>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 noPadding">
+                     <h4>REDES SOCIALES</h4>
+                     <ul class="listIcons">
+                        <li>
+                           <a href="#" data-security-popup="hide" title="Facebook">
+                           <img src="resources/image/Facebook.svg" alt=""/>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" data-security-popup="hide" title="Twitter">
+                           <img src="resources/image/Twitter.svg" alt=""/>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" data-security-popup="hide" title="Whatsapp">
+                           <img src="resources/image/whatsapp-01.svg" alt=""/>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="panel panel-default">
+                     <div class="panel-heading" role="tab" id="heading21">
+                        <h4 class="panel-title">
+                           <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#colapse21" aria-expanded="false" aria-controls="#colapse21">
+                           Información Legal
+                           <span></span>
+                           </a>
+                        </h4>
+                     </div>
+                     <div id="colapse21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading21" aria-expanded="false" style="">
+                        <div class="panel-body">
+                           <ul>
+                              <li>
+                                 <a href="#" data-security-popup="hide" title="Aviso Legal">Aviso Legal</a>
+                              </li>
+                              <li>
+                                 <a href="#" data-security-popup="hide" title="Consulta de Costos y Comisiones de nuestros productos">Consulta de Costos y Comisiones de nuestros productos</a>
+                              </li>
+                              <li>
+                                 <a href="#" data-security-popup="hide" title="Datos CONDUSEF">Datos CONDUSEF</a>
+                              </li>
+                              <li>
+                                 <a href="#" data-security-popup="hide" title="Datos UNE">Datos UNE</a>
+                              </li>
+                              <li>
+                                 <a href="#" data-security-popup="hide" title="Seguridad">Seguridad</a>
+                              </li>
+                              <li>
+                                 <a href="#" data-security-popup="hide" title="Aviso de privacidad">Aviso de privacidad</a>
+                              </li>
+                              <li>
+                                 <a href="#" data-security-popup="hide" title="Productos protegidos por el IPAB">Productos protegidos por el IPAB</a>
+                              </li>
+                              <li>
+                                 <a href="#" data-security-popup="hide" title="Buro de Entidades Financieras">Buro de Entidades Financieras</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="footLegales">
+                  <p>Derechos Reservados @ Banca Afirme, S.A., Institución de Banca Múltiple, Afirme Grupo Financiero. 2022 </p>
+               </div>
+            </div>
+         </div>
+      </footer>
+    <!--- /footer mobile ----->
+
+      <script type="text/javascript" src="resources/js/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="resources/js/afirme.js"></script>
+      <script type="text/javascript" src="resources/js/eskju.jquery.scrollflow.js"></script>
+
+   </body>
+</html>
